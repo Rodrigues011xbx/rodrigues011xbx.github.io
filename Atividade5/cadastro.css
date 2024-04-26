@@ -1,0 +1,32 @@
+body {
+    background-color: white;
+}
+
+label {
+    color: slategray;
+    font-size: 14px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+td {
+    text-align: left;
+    padding: 0;
+}
+
+input {
+    height: 30px;
+    font-size: 14px;
+}
+
+button {
+    width: 90px;
+    height: 50px;
+    cursor: pointer;
+    border: none;
+    background-image: linear-gradient(#f3f3f3 30%, #adadad);
+}
+
+button:hover {
+    outline: 1px solid #5ad8ff;
+    background-image: linear-gradient(#f3f3f3 30%, #58b3cfc2);
+}

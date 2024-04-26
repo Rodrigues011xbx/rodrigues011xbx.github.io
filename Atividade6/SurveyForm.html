@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de pesquisa</title>
+    <link rel="stylesheet" href="SurveyForm.css" type="text/css">
+    <link rel="shortcut icon" href="ifal-foto.png" type="image/x-icon">
+</head>
+
+<body>
+    <h1 id="cbc">Survey Form</h1>
+    <div class="inicial">
+        <p>Let us Know how we can improve freeCodeCamp</p>
+        <br>
+        <table>
+            <form>
+                <tr>
+                    <td class="col1"><p id="identificacao"><strong>* Name : </strong></p></td>
+                    <td class="col2"><input type="text" placeholder="Enter your Name" required></td>
+                </tr>
+                <tr>
+                    <td class="col1"><p><strong>* Email : </strong></p></td>
+                    <td class="col2"><input type="email" placeholder="Enter your Email" required></td>
+                </tr>
+                <tr>
+                    <td class="col1"><p id="idade"><strong>* Age :</strong></p></td>
+                    <td class="col2"><input type="number" placeholder="Age" required></td>
+                </tr>
+                <tr>
+                    <td class="col1"><p id="esquerda"><strong>Option best describes your current role ?</strong></p></td>
+                    <td class="col2">
+                        <select>
+                            <option value="Student">Student</option>
+                            <option value="Unemployed">Unemployed</option>
+                            <option value="Military">Military</option>
+                            <option value="Worker">Worker</option>
+                            <option value="Retiree">Retiree</option>
+                            <option value="others">others</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col1"><p id="Es2"><strong>* How likely is that you would recommend freeCodeCamp to a friend ?</strong></p></td>
+                    <td class="col2">
+                        <div class="opcoes">
+                            <input type="radio" id="definitly" name="recomendar" value="Definitly">: Definitly
+                            <br>
+                            <input type="radio" id="maybe" name="recomendar" value="Maybe">: Maybe
+                            <br>
+                            <input type="radio" id="not-sure" name="recomendar" value="Not sure">: Not sure
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col1"><p><strong>What do you like most in FCC:</strong></p></td>
+                    <td class="col2">
+                        <select>
+                            <option value="Select an option">Select an option</option>
+                            <option value="Nothing">Nothing</option>
+                            <option value="Aesthetics">Aesthetics</option>
+                            <option value="Everything">Everything</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col1"><p id="penultimo"><strong>Things that should be improved in the future (Check all that apply)</strong></p></td>
+                    <td class="col2">
+                        <input type="checkbox" name="Front-end Projects" value="Front-end Projects" required>: Front-end
+                        Projects
+                        <br>
+                        <input type="checkbox" name="Back-end Projects" value="Back-end Projects">: Back-end Projects
+                        <br>
+                        <input type="checkbox" name="Data visualization" value="Data visualization" class="correcao">: Data
+                        visualization
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col2"><input type="submit"></td>
+                    <td class="col2"><input type="reset"></td>
+                </tr>
+            </form>
+        </table>
+    </div>
+</body>
+</html>

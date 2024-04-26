@@ -1,0 +1,28 @@
+body{
+    background-color: rgb(138, 136, 136);
+}
+
+#card-teste{
+    position: absolute;
+    top: 20px;
+    right: 20px
+}
+
+.form-control {
+    opacity: 0.5;
+}
+
+.input-geral{
+    margin-left: 20%;
+    width: 50%
+}
+
+img{
+    width: 5%;
+    margin-left: 1%;
+    margin-top: 1%;
+}
+
+#calculo{
+    margin-right: 2%;
+}

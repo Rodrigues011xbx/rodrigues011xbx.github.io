@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alterar Imagem com Mouseover</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <img id="imagem" src="https://imgs.search.brave.com/RaC-tDDwphFuqyYujv7enKgK3ND0I9cA4xkQEP2jwIM/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pMC5z/dGF0aWcuY29tLmJy/L2JhbmNvZGVpbWFn/ZW5zLzRvL3NrL2R0/LzRvc2tkdHE2NXY4/ZTlvdXk1cjMyajAz/a3guanBn" alt="Imagem 1">
+    
+    <script>
+        const imagem = document.getElementById('imagem');
+
+
+        imagem.addEventListener('mouseover', () => {
+            imagem.src = 'https://imgs.search.brave.com/qEvnbtFFZn3tYZW1MNeif_0CLIibVjnnoyM08U9o6k0/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTIy/OTU1NjQxNS9wdC9m/b3RvL2JyYXNpbGlh/LWJyYXppbC1ub3Zl/bWJlciVDMiVBMDA5/LXByZXNpZGVudC1v/Zi1icmF6aWwtamFp/ci1ib2xzb25hcm8t/dG91Y2hlcy1oaXMt/ZmFjZS1kdXJpbmcu/anBnP3M9NjEyeDYx/MiZ3PTAmaz0yMCZj/PUhTcFFhdk1wampa/S0Q2UFU5MTRIVl8w/aTRSZnhLUlpaTzJu/TUN4azFLMTg9'; // Substitua 'imagem2.jpg' pelo caminho da segunda imagem desejada
+        });
+
+        imagem.addEventListener('mouseout', () => {
+            imagem.src = 'https://imgs.search.brave.com/RaC-tDDwphFuqyYujv7enKgK3ND0I9cA4xkQEP2jwIM/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pMC5z/dGF0aWcuY29tLmJy/L2JhbmNvZGVpbWFn/ZW5zLzRvL3NrL2R0/LzRvc2tkdHE2NXY4/ZTlvdXk1cjMyajAz/a3guanBn'; 
+        });
+    </script>
+</body>
+</html>

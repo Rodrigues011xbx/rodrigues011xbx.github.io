@@ -1,0 +1,126 @@
+:root {
+    --primary-color: #6F2CF5;
+    --secondary-color: #fff;
+    --third-color: rgb(175, 172, 175); /* Degrade Superior */
+    --shadow-color: #1e0744;
+    --border-input: #a17de7;
+    --link-color: #0000ff;
+    --link-color-hover: #222;
+}
+.dark-theme {
+    --primary-color: #222;
+    --secondary-color: #555;
+    --third-color: #333; /* Degrade Superior Tema Escuro */
+    --shadow-color: #222222;
+    --border-input: #ccc;
+    --link-color: #fff;
+    --link-color-hover: #777;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background-color: #333;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: linear-gradient(var(--third-color), #555);
+}
+
+label {
+    color:white
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    height: auto;
+    padding: 20px 0;
+    background-color: var(--primary-color);
+    box-shadow: 0 0 30px var(--shadow-color);
+}
+
+nav div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#titulo{
+    font-size: 25px;
+    margin-left: 50px;
+    color: rgb(226,241,250);
+    text-shadow: 2px 2px 4.5px #000;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+#img-logo {
+    width: 5vw;
+}
+
+#nav-pesquisa {
+    width: fit-content;
+    padding-left: 10px;
+    padding-bottom: 2.5px;
+    border-radius: 10px;
+    border: 1px solid var(--border-input);
+}
+#nav-pesquisa:hover {
+    outline: 2px solid rgba(255, 255, 255, 0.87);
+}
+#lupa{
+    height: 20px;
+}
+
+input{
+    background-color: transparent;
+    color: white;
+    height: 6vh;
+    width: 20vw;
+    text-indent: 20px;
+    font-size: 15px;
+    border: none;
+}
+input::placeholder{
+    color: white;
+}
+input:focus {
+    outline: none;
+}
+
+#icon-theme {
+    user-select: none;
+    font-size: 35px;
+    cursor: pointer;
+    color: #fff;
+    margin-right: 50px;
+}
+
+.card {
+    margin: 45px 50px;
+    background-color: var(--secondary-color);
+}
+.card-body {
+    padding: 10px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+a {
+    transition: .2s;
+    color: var(--link-color);
+}
+a:hover {
+    text-shadow: 0 1px 7px var(--link-color-hover);
+}

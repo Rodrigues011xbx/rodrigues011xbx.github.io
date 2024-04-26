@@ -1,0 +1,73 @@
+
+
+.containerGeral{
+    font-family :'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.card-body{
+    background-color : #212529;
+}
+#carouselExampleIndicators{
+    width: 100%;
+    height: 66vh;
+    overflow: hidden;
+}
+
+#avalia{
+    width: 2%;
+}
+
+h5{
+    width: 30%;
+}
+
+#desc{
+    width: 30%;
+}
+
+nav{
+    margin: 0;
+    color : black;
+}
+
+#carouselExampleIndicators  .carousel-item img {
+    transform: translate(0,-20%);
+    width: 120%;
+}
+#img-espe{
+    transform: translate(0,-1%);
+    width: 100%;
+}
+#ilustre{
+    width: 10%;
+}
+
+footer{
+    background-color: black;
+    height: 90%;
+    color : white;
+    text-align: center;
+}
+
+.form-check{
+    background-color: black;
+    color : white;
+     
+}
+#pp{
+    color: white;
+}
+
+.form-check{
+    padding: 2%;
+}
+#exampleFormControlInput1{
+    width: 30%;
+}
+#enviar-email{
+    margin-left: 25%;
+}
+
+#busca{
+    margin-left: 10%;
+}
+

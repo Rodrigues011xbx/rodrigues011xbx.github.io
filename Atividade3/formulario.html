@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Form</title>
+	<style>
+		select {
+			background-color: #e0d7d7f8;
+			/* Cor de fundo */
+			color: #030303cc;
+			/* Cor do texto */
+			border: 1px solid #ecdcdc;
+			/* Borda */
+			padding: 5px;
+			/* Espaçamento interno */
+			border-radius: 20px;
+			/* Borda arredondada */
+			width: 170px;
+			/* Largura */
+		}
+
+		#number-persons {
+			width: 169px;
+		}
+
+		input[type="checkbox"],
+		input[type="radio"],
+		input[type="submit"],
+		input[type="reset"] {
+			cursor: pointer;
+			appearance: none;
+			border-radius: 3px;
+			background-color: #d4d4d4;
+		}
+
+		input[type="submit"],
+		input[type="reset"] {
+			border: 1px solid #525252;
+		}
+
+		input[type="checkbox"],
+		input[type="radio"] {
+			width: 12px;
+			height: 12px;
+			outline: 1.5px solid #525252;
+		}
+
+		input[type="radio"] {
+			border-radius: 100%;
+		}
+
+		input[type="checkbox"]:checked,
+		input[type="radio"]:checked {
+			outline: none;
+			background-color: #005CC8;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>Travel reservation form</h1>
+	<h3>* denotes mandotory</h3>
+
+	<form>
+		<label for="full_name">Full name* :</label>
+		<br>
+		<input type="text" id="full_name" name="full_name" pattern="^[a-zA-Z\s]+$" placeholder="FirstName_LastName"
+			required />
+
+		<br>
+		<br>
+		<label for="email">Email address* :</label>
+		<br>
+		<input type="email" name="email" placeholder="EMAIL_ADDRESS" required />
+		<br>
+		<br>
+		<label>Select Tour Package* :</label>
+		<br>
+
+		<select style="color: black" name=" Package">
+			<option value="Goa">Goa</option>
+			<option value="Andhra Pradesh">Andhra Pradesh</option>
+			<option value="Assam">Assam</option>
+			<option value="Haryana">Haryana</option>
+		</select>
+		<br>
+		<br>
+		<label id="arrival-date">Arrival date* :</label>
+		<br>
+		<input id="arrival-date" type="date" name="arrival-date" required>
+
+		<br>
+		<br>
+		<label id="number-persons">Number of Persons* :</label>
+		<br>
+		<input id="number-persons" type="number" name="number-persons" min="1" max="9" placeholder="UNKNOWN_TYPE"
+			required />
+
+		<p>What would you want to avail? *</p>
+		<label for="boarding">Boarding</label>
+		<input id="boarding" type="checkbox" name="avail" value="boarding">
+		<br>
+		<label for="amarelo">Fooding</label>
+		<input id="fooding" type="checkbox" name="avail" value="fooding">
+		<br>
+		<label for="Rosa">Sight Seeing</label>
+		<input id="sight-seeing" type="checkbox" name="avail" value="sight-seeing">
+		<br>
+		<br>
+		<label for="coupon-code">Discout Coupon code:</label>
+		<br>
+		<br>
+		<input id="coupon-code" type="text" parttern="[a-zA-Z0-9]{6}" placeholder="UNKNOWN_TYPE">
+
+		<p>Termns and Conditions*</p>
+
+		<input id="i-agree" type="radio" name="Terms" required />
+		<label for="i-agree">I agree</label>
+		<input id="i-disagree" type="radio" name="Terms" />
+		<label for="i-disagree">I disagree</label>
+
+		<br>
+		<br>
+		<input type="submit" value="Complete reservation">
+		<input type="reset" value="Clear">
+	</form>
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+body {
+  border: cornflowerblue;
+  padding: 10px ; 
+  background-color: rgb(26, 24, 24);
+  display: grid;   
+  justify-content: center;
+  text-align: center;
+}
+
+h1 {
+  color: rgb(10, 236, 40);
+  background-color: black;
+  text-shadow: 2px 2px 5px;
+  border: solid;
+  margin-top: 10px;
+  margin-left: 280px;
+  margin-right: 280px;
+
+}
+
+input {
+  background-color: rgb(230, 218, 218);
+  height: 20px;
+}
+.inicial {
+  display: grid;
+  justify-content: center;
+  background-color: #fff;
+  width: 90vw;
+}
+.col1, .col2 {
+  padding: 10px; 
+  width: 300px;
+}
+.col1 {
+  text-align: right;
+}
+.col2 {
+  text-align: left;
+}
+
+#idade {
+  margin-left: 12px;
+}
+
+select {
+  width: 180px;
+  height: 30px;
+  background-color: lightgray;
+}
+select:hover {
+  border: 2px solid rgb(8, 224, 8);
+}
+
+input[type=submit], input[type=reset] {
+  width: 100%;
+}

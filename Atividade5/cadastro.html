@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro estudantil ;</title>
+    c
+</head>
+
+<body>
+    <br><br>
+    <form>
+        <table>
+            <tr>
+                <td>
+                    <label> Matrícula : </label>
+                    <input type="number" min="1" required>
+                </td>
+                <td>
+                    <button type="submit">Salvar</button>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Nome : </label>
+                    <input type="text" pattern="^[a-zA-Z\s]+$" required>
+                </td>
+                <td>
+                    <button>Atualizar</button>
+                    <br>
+                    <div style="margin: 2px"></div>
+                    <button type="reset">Excluir</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>E-mail : </label>
+                    <input type="email" required>
+                </td>
+                <td>
+                    <button>Voltar</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+    <a href=""><button>Atualizar a Página</button></a>
+</body>
+</html>

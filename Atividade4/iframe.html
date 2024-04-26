@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iFrame</title>
+    <style>
+        body {
+            background-color: #dadada;
+            /* Fundo Cinza */
+            display: flex;
+            justify-content: center;
+        }
+
+        table {
+            border-collapse: collapse;
+            /* Colapsa a borda da tabela */
+            border: 5px solid #000;
+            /* Borda ao redor da tabela */
+
+        }
+
+        iframe {
+            width: 400px;
+            /* Largura do iFrame */
+            height: 300px;
+            /* Altura do iFrame */
+        }
+
+        caption {
+            font-size: 24px;
+            /* Tamanho da Fonte */
+            color: #fff;
+            /* Cor do Texto */
+            background-color: #0000ff;
+            /* Fundo Azul */
+        }
+
+        td {
+            border: 4px solid #000;
+            /* Borda dos elementos da tabela */
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <caption>iFrame - Sites de Notícias</caption>
+        <tr>
+            <td><iframe
+                    src="https://ge.globo.com/rj/futebol/brasileirao-serie-a/noticia/2023/07/05/flamengo-x-athletico-onde-assistir-ao-vivo-horario-e-escalacoes.ghtml"></iframe>
+            </td>
+            <td><iframe src="https://odia.ig.com.br/"></iframe></td>
+        </tr>
+        <tr>
+            <td><iframe src="https://www.estadao.com.br/"></iframe></td>
+            <td><iframe src="https://www.correiobraziliense.com.br/"></iframe></td>
+        </tr>
+    </table>
+</body>
+
+</html>
